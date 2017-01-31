@@ -12,8 +12,8 @@ def trade_spider(max_pages):
         for link in soup.find_all('a', {'class': 'user-name'}):
             href = link.get('href')
             user = link.string
-            # print(href)
-            # print(user)
+            print(href)
+            print(user)
             get_single_item_data(href)
         page += 1
 
